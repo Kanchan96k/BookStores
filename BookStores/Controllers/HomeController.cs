@@ -8,9 +8,19 @@ namespace BookStores.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        public ViewResult Index()
         {
-            return "BookStore Project";
+            return View("~/TempView/Kanchan.cshtml");
+        }
+
+        public ViewResult AboutUs()
+        {
+            return View();
+        }
+
+        public ViewResult ContactUs()
+        {
+            return View();
         }
     }
 }
